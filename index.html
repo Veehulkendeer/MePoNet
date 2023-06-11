@@ -2,58 +2,15 @@
 <html>
 <head>
   <title>Networking Website</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    
-    h1 {
-      margin: 0;
-    }
-    
-    nav {
-      background-color: #f2f2f2;
-      padding: 10px;
-      text-align: center;
-    }
-    
-    nav a {
-      color: #333;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-    
-    nav a:hover {
-      text-decoration: underline;
-    }
-    
-    section {
-      margin: 20px;
-      text-align: center;
-    }
-    
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
   <header>
     <h1>MePoNet</h1>
+    <img src="login.png" alt="Button" id="login-image">
   </header>
-  
+
   <nav>
     <a href="index.html">Home</a>
     <a href="#">Projects</a>
@@ -63,10 +20,21 @@
     <a href="#">My Page</a>
   </nav>
   
-  <section>
-    <h2>Welcome to our Networking Website!</h2>
-    <p>Connect with professionals, share your achievements, and explore new opportunities.</p>
-  </section>
+  <div class="main-content">
+        <section class="grid-section">
+            <div class="post-box">
+            <h3>Make a Post</h3>
+            <form>
+                <textarea placeholder="Write your post here..." rows="4"></textarea>
+                <button type="submit">Publish</button>
+            </form>
+            </div>
+            <div class="activity-box">
+            <h3>Recent Activity</h3>
+            </div>
+        </section>
+    </div>
+    
   
   <footer>
     &copy; 2023 MePoNet. All rights reserved.
